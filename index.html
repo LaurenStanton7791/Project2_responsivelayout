@@ -9,10 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="wrap">
+    <div class="container">
     <header class="main-header">
-		<div class="container clearfix">
-			<h1 class="name">Lauren Stanton</h1>
+		<h1 class="name">Lauren Stanton</h1>
 		<ul class="main-nav">
         <li><a href="#">Home</a></li>
         <li><a href="#">Experience</a></li>
@@ -20,49 +19,60 @@
         </ul>
     </div>
 </header>
-      
-  <div class="banner">
-		<img class="profile" src="images/responsive-layout-profile.png" alt="My profile image">
+<div class="banner">
+		<img class="profile-image" src="images/responsive-layout-profile.png" alt="My profile image">
         <span class="tagline"> 
             <p>Hi! I'm a front-end developer who loves responsive design and CSS.</p>
             <p>I recently finished front-end degree at Treehouse and am</p>
             <p>excited to put all my skills to use!</p>
         </span>
-        <h1 class="headline">Portfolio</h1>
 </div><!--/.banner-->
-<div class="container clearfix">
+<main class="portfolio-display">
+<h1 class="headline">Portfolio</h1>
 
-<div class="primary col"><!--/.primary-->
+<div class="column"><!--primary-->
     <h2>Marketing Page</h2>
-        <figure>
-            <img class= "marketing-page" src="images/marketingpage.png" alt="Marketing page">
-        </figure>
-        <p>This project shows the front page of a marketing website for a specific business i'm interested in.</p>
-        <h2>Map of Favorite Spots</h2> 
-        <figure>
-            <img class="mapping-spots" src="images/mapoffavoritespots.png" alt="Map of favorite spots">
-        </figure>
-        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do it yourself walking tour</p>
-        
+    <img class= "portfolio-image" src="images/marketingpage.png" alt="Marketing page">
+    <h3>This project shows the front page of a marketing website for a specific business i'm interested in.</h3>
 </div>
-<div class="secondary col"><!--secondary-->
+    <h2>Map of Favorite Spots</h2> 
+    <img class="portfolio-image" src="images/mapoffavoritespots.png" alt="Map of favorite spots">
+    <h3>This project uses mapping apis to plot points for my favorite spots in the city for a do it yourself walking tour</h3>
+</div>
+<div class="column"><!--secondary-->
     <h2>Search Page</h2>
-        <figure>
-            <img class="searching-page" src="images/searchpage.png" alt="Search Page">
-        </figure>
-        <p>This project searches through a specific databaseto find information that the user is trying to look up.</p>
-</div>
-<div class="tertiary col"><!--tertiary-->
-    <h2>Travel App</h2>
-    <figure>
-        <img class="travel-app" src="images/travelapp.png" alt="Travel App">
-    </figure>
-    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+    <img class="portfolio-image" src="images/searchpage.png" alt="Search Page">
+    <h3>This project searches through a specific database to find information that the user is trying to look up.</h3>
+    <h2>Photo Gallery</h2>
+    <img class="portfolio-image" src="images/photogallery.png" alt="Photo Gallery">
+    <h3>This project shows pictures from a recent trip to the viewer and allows them to easy navigate through photos.</h3>
     </div>
-  </div>
+<div class="column"><!--tertiary-->
+    <h2>Travel App</h2>
+    <img class="portfolio-image" src="images/travelapp.png" alt="Travel App">
+    <h3>This project compares travel times based on different transportation methods and tells you the best one.</h3>
+    <h2>Calculator</h2>
+    <img class="portfolio-image" src="images/calculator.png" alt="Calculator">
+    <h3>Someone can enter the numbers they want, and press the big blue button to get the result.</h3>
 </div>
+</div>
+</main>
+<section>
+    <h2 class="experience">Experience</h2>
+    <p>This is my experience</p>
+<section>
+    <h2 class="contact">Contact</h2>
+    <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you! </p>
+    <p>Phone: <strong> +1 (808) 555-555</strong></p>
+    <p>Email: <strong> email@yoursite.com</strong></p>
+</section>
     <footer class="main-footer">
-	
+    <h2>Lauren Stanton</h2>
+    <ul class="footer-nav">
+    <li><a href="#">Home</a></li>
+    <li>Experience</li>
+    <li>Contact</li>
+    </ul>
     </footer>
 
 
