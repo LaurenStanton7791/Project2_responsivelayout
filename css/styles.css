@@ -1,108 +1,124 @@
 /* ================================= 
-  Base Element Styles
+  Base Styles
 ==================================== */
+
 * {
-    box-sizing: border-box;
-  
-  }
-  
+	box-sizing: border-box;
+}
+
 body {
-      line-height: 1.6;
-      color: #000000;
-      text-align: center;
-      font-family: 'Forum', cursive;
-     }
-h1 {
-     margin-top: 0;  
+	font-family: 'Forum', cursive; 
+	line-height: 1.6;
+	color: #3a3a3a;
 }
 
-a { 
-    color: black;
-    text-decoration: none;
+p {
+	font-size: .95em;
+	margin-bottom: 1.5em;
 }
-.name a,
-.main-nav a {
-    padding: 10px 15px;
-    display: block;  
-}  
+img {
+display: inline-block;
+width: 25%;
 
-img{
-width: 35%
 }
-  
-  
-  
-  
-  /*Navigation Links*/
-  
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
 .name {
-    margin: 0;
-  }
-  
+	font-size: 1.25em;
+}
+
 .name,
 .main-nav li {
 	text-align: center;
 	background: #fff;
 	margin-top: 6px;
-	
+	margin-bottom: 6px;
 }
-  
-  /* ---- Layout Containers ---- */
 
-  .container {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-  
-  .main-header {
-    background: white;
-    padding: 1em 0; 
-  }
-  
-  .main-footer {
-    text-align: center;
-      padding: 2em 0;
-      background: #d9e4ea;
-  }
-  
-  /* ---- Page Elements ---- */
-  
-  /* ================================= 
+.name a,
+.main-nav a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+
+	.main-nav a {
+		font-size: .95em;
+		color: black;
+		text-transform: uppercase;
+	}
+	
+	.main-nav a:hover {
+		color: royalblue;
+	}
+
+/* ---- Layout Containers ---- */
+
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.main-header {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	background: white;
+	margin-bottom: 30px;
+    height: 110px; 
+    overflow: hidden;
+}
+
+.main-footer {
+	text-align: center;
+	padding: 2em 0;
+	background: grey;
+}
+
+/* ================================= 
   Media Queries
-  ==================================== */
-  
-@media (min-width: 768px) 
-    {
-.name,
-.main-nav,
+==================================== */
+
+@media (min-width: 789px) {
+
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+	.container {
+		width: 85%;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+.main-nav {
+  float: right; 
+
+}
+
 .main-nav li {
-    display: inline-block; 
+  float: left; 
+  margin-left: 12px; 
 }
 
 .name {
-    width: 240px; 
-    margin-right: 50px;
-
-}
-.container {
-    width: 80%;
-    max-width: 1150px;
-    margin: 0 auto; 
-  }
-.profile-image {
-    width: 35%;
-    float: right;
-
-}
-.wrap {
-    min-height: calc(100vh);
-  
-  }
-  }
-  @media (min-width: 1024px) {
-.container {
-    width: 70%;
-    max-width: 1000%;
-    margin: 0 auto;
-  }
-  }
+  float: left; 
+        }
+    }
