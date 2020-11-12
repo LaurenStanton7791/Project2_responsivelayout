@@ -15,21 +15,23 @@ body {
 
 .name {
 margin-left: 50px;
+font-size: 40px;
 }
 
 p {
-	font-size: 1.5em;
-    margin-bottom: 1.5em;
-    margin-left: 6em;
-    margin-right: 6em;
-    text-align: center;
-    color: gray;
+    font-size: 36px;
+    margin-top: auto;
+    margin-right: 1150px;
+    margin-left: 60px;
+    text-align: left;
+    color: black;
 }
 
 .headline {
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 50px;
 }
 
 img {
@@ -37,9 +39,12 @@ img {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 40px;
 }
+h2 {
+    font-size: 40px;
 
+}
 h2,
 h3 {
 	margin-top: 0;
@@ -51,16 +56,29 @@ a {
 
 ul li {
     font-weight: bold; 
+    font-size: 26px;
     margin: 50px; 
     padding: 10px 0; 
 }
 
+section {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.experience,
+.contact {
+    text-align: center;
+}
 /* ================================= 
   Base Layout Styles
 ==================================== */
 
 .profile-image {
-    display:block;
+    display:inline;
+    width: 30%;
+    float: right;
+    margin-right: 70px; 
 }
 
 /* ---- Navigation ---- */
@@ -121,10 +139,11 @@ ul li {
 }
 
 .main-footer {
-	text-align: center;
+	text-align: left;
 	padding: 2em 0;
     background:lightslategray;
-    display: inline-block;
+  
+   
 }
 
 .cell{
@@ -151,12 +170,17 @@ ul li {
 .portfolio > div {
     background-color: #f1f1f1;
     height: 350px;
-    width: 400px;
+    width: 500px;
     margin: 10px;
     text-align: center;
     /*line-height: 75px*/
     padding: 20px 20px 20px 20px;
     /*font-size: 30px;*/
+}
+
+.footer-nav {
+    float: right;
+    display: inline;
 }
 /* ================================= 
   Media Queries
