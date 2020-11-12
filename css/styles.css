@@ -142,8 +142,13 @@ section {
 	text-align: left;
 	padding: 2em 0;
     background:lightslategray;
-  
-   
+    background: lightslategray;
+    position: fixed;
+    margin-top: 5%;
+    left: 0px;
+    bottom: 0px;
+    height: 0px;
+    width: 100%;
 }
 
 .cell{
