@@ -1,7 +1,3 @@
-/* ================================= 
-  Base Styles
-==================================== */
-
 * {
 	box-sizing: border-box;
 }
@@ -11,11 +7,7 @@ body {
 	/*line-height: 1.6;*/
     color: black;
     text-align: center;
-}
-
-.name {
-margin-left: 50px;
-font-size: 40px;
+ 
 }
 
 p {
@@ -26,7 +18,7 @@ p {
     color: black;
 }
 
-.headline {
+.portfolio {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 2%;
@@ -69,6 +61,14 @@ section {
 .contact {
     text-align: center;
 }
+.container {
+    display: inline-flex;
+    width: 100%;
+}
+.portfolio-img {
+    padding: 5px 10px 5px 10px;
+    width: 400px;
+}
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -83,18 +83,22 @@ section {
 /* ---- Navigation ---- */
 
 /*.name,*/
-.main-nav {
-    float: right; 
-}
 
-.main-nav li {
-	text-align: center;
-	/*background: #fff;*/
-	margin-top: 6px;
-    margin-bottom: 6px;
-    float:left;
     
-}
+.main-nav {
+    list-style: none;
+    font-size: 1em;
+  }
+  
+  .main-nav li {
+    margin-left: -18px;
+    margin-bottom: 0.25em;
+    padding: 0.5em 0em;
+    font-weight: bold;
+    width: 99%;
+    border-radius: 2.5px;
+    background-color: white;
+  }
 
 /*.name a,
 .main-nav a {
@@ -103,36 +107,33 @@ section {
 	display: block;
 }*/
 
-.main-nav a {
-    padding: 10px 15px;
-	text-align: center;
-	display: block;
-    font-size: .95em;
-    color: black;
-    text-transform: uppercase;
-}
 	
 .main-nav a:hover {
     color: royalblue;
 }
 
-/* ---- Layout Containers ---- */
+/* ---- Layout Styles ---- */
 
-.container {
+/*.container {
 	/*padding-left: 1em;
     padding-right: 1em;*/
-    /*display: inline-block;*/
+    /*display: inline-block;
     height:auto;
     width: 100%;
-    border: 5px solid red;
+    border: 5px solid red;*/
+ 
+.main-nav {
+    display: inline-flex;
+    float: right;
+    margin-top: -115px;
+    list-style: none;
+    font-size: 1em;
 }
 
+
 .main-header {
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
-	background: white;
+    background: white;
 	margin-bottom: 30px;
-    height: 110px; 
     overflow: hidden;
     width:100%;
     border: 5px solid red;
@@ -142,25 +143,17 @@ section {
     color: black; 
 }
 
-.cell{
-    float:left;
-    border: 5px solid red;
-}
-
-.wrap{
-    width:100%;
-    /*border: 5px solid red;*/
-}
-
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
     align-items: center;
     border: 5px solid red;
     padding: 0;
     margin: 0;
     justify-content: center;
+}
+
+.portfolio-image {
+    display: block;
 }
 
 .portfolio > div {
@@ -179,21 +172,42 @@ section {
     display: inline;
 }
 
+.main-footer {
+    display: flex;
+    flex-direction: row;
+}
+
 .info {
     text-align: center;
     margin: 20px 20px; 
 }
+.bottom-nav {
+  text-align: center;
+ 
+  padding-bottom: 1em;
+}
+.footer-nav li {
+    display: inline;
+    color: black;
+    margin-bottom: 0.25em;
+    padding-right: 1em;
+  }
+
+.footer-nav a:hover {
+    color: royalblue;
+}
 /* ================================= 
   Media Queries
 ==================================== */
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
     .profile-image {
         width: 400px;
         float: right;
         margin: 0 auto;
     }
     .portfolio {
-        display: inline-flex;
+        display: inline;
+        float: left;
         width: 100%;
         align-items: center;
         border: 5px solid red;
@@ -223,7 +237,11 @@ p {
 }
 }
 
-@media (max--width: 768px) {
+@media(min-width: 768px) {
+
+    .main-nav {
+        width: 335px; 
+    }
     .profile-image {
         width: 30%;
 }
@@ -237,7 +255,7 @@ p {
 }
 
     .portfolio {
-        display: flex;
+        display: inline;
         flex-wrap: wrap;
         width: 100%;
         align-items: center;
@@ -249,7 +267,7 @@ p {
     .portfolio > div {
         background-color: #f1f1f1;
         height: 350px;
-        width: 350px;
+     
         margin: 10px;
         text-align: center; 
         /* line-height: 75px; */
@@ -258,7 +276,7 @@ p {
 }
 }
 
-@media (max-width: 320px) {
+/*@media (min-width: 320px) {
     .main-header {
         padding-top: 1.5em;
         padding-bottom: 1.5em;
