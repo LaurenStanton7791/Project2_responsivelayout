@@ -1,3 +1,7 @@
+/* ================================= 
+  Base Layout
+==================================== */
+
 * {
 	box-sizing: border-box;
 }
@@ -7,8 +11,11 @@ body {
     color: black;
     background-color: #e2e2e2;
 }
+
 .main-header {
     text-align: center;
+    margin-left: 55px;
+  
 }
   
 .name {
@@ -16,13 +23,18 @@ body {
     font-size: 3em;
     color: black;
     text-align: center;
-  }
+}
   
-.main-nav {
+.main-nav li {
     list-style: none;
+    text-align: center;
     text-transform: uppercase;
     margin-bottom: 0.25em;
     font-weight: bold;
+    padding: 0;
+    width: 95%;
+    border-radius: 35px;
+    background-color: white;
 }
 
 p {
@@ -42,7 +54,8 @@ p {
     text-align: center;
     padding-bottom: 5%;
     background-color: #fff;
-  }
+    width: 100%;
+}
 
 
 h1 {
@@ -69,7 +82,9 @@ h3 {
 .profile-image {
     display: block;
     margin: auto;
+ 
 }
+
 .main-nav a:hover {
     color: royalblue;
 }
@@ -79,7 +94,9 @@ a {
     transition: color 0.5s ease;
     color: black;
   }
-
+/* ================================= 
+  Footer layout
+==================================== */
 .main-footer {
     color: black; 
     background-color: #e2e2e2;
@@ -104,6 +121,7 @@ hr {
 .footer-name {
     font-weight: 600;
     float: left;
+    margin-left: 10px;
  }
  
 .footer-nav li {
@@ -157,10 +175,9 @@ hr {
       }
     
     .intro {
-        float: left;
         width: 50%;
         padding-left: 5%;
-        padding-top: 5%;
+        padding-right: 5%;
     }
     
     .group:after {
@@ -193,8 +210,12 @@ hr {
         margin-top: 70px;
         width: 60%;
       }
+.profile-image {
+    padding-right: 10%;
+    padding-top: 0;
+}
 .main-content {
-        width:  95%;
+        width: 95%;
         margin: 0 auto;
     }
 
@@ -217,68 +238,3 @@ hr {
 }
 } 
 
-
-
-/*@media (min-width: 320px) {
-    .main-header {
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
-        margin-inline-start: 32px;
-        margin-bottom: 30px;
-        overflow: hidden;
-        width: 100%;
-       
-    }
-    .name {
-        margin: 0 auto;
-        font-size: 40px;
-        text-align: center;
-        }
-    .container {
-        height:auto;
-        width: 100%;
-    } 
-    body {
-        text-align: center;
-    }
-    p {
-        font-size: 22px;
-        margin: 0 auto;
-        text-align: center;
-        color: black;
-    }
-
-    .profile-image {
-        width: 300px;
-        float: none;
-        margin: 0 auto;
-}
-    img {
-        width: 100%;
-        height: auto;
-      }
-      
-    .portfolio {
-        width: 90%;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        justify-content: center;
-    }
-
-    
-
-    
-        
-    .main-nav {
-        float: right; 
-    }
-
-    .main-nav li {
-        float: left; 
-        margin-left: 12px; 
-    }
-
-    .name {
-        float: left; 
-    }
