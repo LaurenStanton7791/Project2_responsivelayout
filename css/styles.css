@@ -4,277 +4,220 @@
 
 body {
 	font-family: 'Forum', cursive; 
-	/*line-height: 1.6;*/
     color: black;
+    background-color: #e2e2e2;
+}
+.main-header {
+    text-align: center;
+}
+  
+.name {
+    padding-top: .25em;
+    font-size: 3em;
+    color: black;
+    text-align: center;
+  }
+  
+.main-nav {
+    list-style: none;
+    text-transform: uppercase;
+    margin-bottom: 0.25em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 26px;
     text-align: center;
  
 }
 
-p {
-    font-size: 30px;
-    margin-top: auto;
-    margin-left: 60px;
-    text-align: left;
-    color: black;
-}
-
 .portfolio {
     text-align: center;
-    margin-top: 5%;
     margin-bottom: 2%;
     font-size: 50px;
 }
 
-img {
-    width:300px;
-}
+.main-content {
+    padding-top: 3em;
+    text-align: center;
+    padding-bottom: 5%;
+    background-color: #fff;
+  }
+
 
 h1 {
     font-size: 40px;
 }
-h2 {
-    font-size: 28px;
 
-}
-h2,
 h3 {
-	margin-top: 15px;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul li {
-    font-weight: bold; 
-    font-size: 26px;
-    margin: 50px; 
-    padding: 10px 0; 
-}
-
-section {
-    margin-top: 5%;
+    margin-top: 15px;
+    font-size: 34px;
     text-align: center;
 }
 
-.experience,
 .contact {
     text-align: center;
+
 }
-.container {
-    display: inline-flex;
-    width: 100%;
-}
+
 .portfolio-img {
-    padding: 5px 10px 5px 10px;
-    width: 400px;
+    width: 75%;
+    display: block;
+    margin: auto; 
 }
-/* ================================= 
-  Base Layout Styles
-==================================== */
 
 .profile-image {
-    display:inline;
-    width: 30%;
-    float: right;
-    margin-right: 70px; 
+    display: block;
+    margin: auto;
 }
-
-/* ---- Navigation ---- */
-
-/*.name,*/
-
-    
-.main-nav {
-    list-style: none;
-    font-size: 1em;
-  }
-  
-  .main-nav li {
-    margin-left: -18px;
-    margin-bottom: 0.25em;
-    padding: 0.5em 0em;
-    font-weight: bold;
-    width: 99%;
-    border-radius: 2.5px;
-    background-color: white;
-  }
-
-/*.name a,
-.main-nav a {
-	padding: 10px 15px;
-	text-align: center;
-	display: block;
-}*/
-
-	
 .main-nav a:hover {
     color: royalblue;
 }
 
-/* ---- Layout Styles ---- */
-
-/*.container {
-	/*padding-left: 1em;
-    padding-right: 1em;*/
-    /*display: inline-block;
-    height:auto;
-    width: 100%;
-    border: 5px solid red;*/
- 
-.main-nav {
-    display: inline-flex;
-    float: right;
-    margin-top: -115px;
-    list-style: none;
-    font-size: 1em;
-}
-
-
-.main-header {
-    background: white;
-	margin-bottom: 30px;
-    overflow: hidden;
-    width:100%;
-    border: 5px solid red;
-}
+a {
+    text-decoration: none;
+    transition: color 0.5s ease;
+    color: black;
+  }
 
 .main-footer {
     color: black; 
+    background-color: #e2e2e2;
 }
-
-.portfolio {
-    width: 100%;
-    align-items: center;
-    border: 5px solid red;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-}
-
-.portfolio-image {
-    display: block;
-}
-
-.portfolio > div {
-    background-color: #f1f1f1;
-    height: 350px;
-    width: 500px;
-    margin: 10px;
-    text-align: center;
-    /*line-height: 75px*/
-    padding: 20px 20px 20px 20px;
-    /*font-size: 30px;*/
+.main-footer a:hover {
+    color: royalblue;
 }
 
 .footer-nav {
     float: right;
     display: inline;
+    padding-top: 3%;
 }
-
-.main-footer {
-    display: flex;
-    flex-direction: row;
-}
-
-.info {
-    text-align: center;
-    margin: 20px 20px; 
+hr {
+    width: 95%;
+    border: white solid 2px;
+    display: block;
 }
 .bottom-nav {
-  text-align: center;
- 
-  padding-bottom: 1em;
+    text-align: center;
 }
+.footer-name {
+    font-weight: 600;
+    float: left;
+ }
+ 
 .footer-nav li {
     display: inline;
     color: black;
     margin-bottom: 0.25em;
-    padding-right: 1em;
+    padding-right: .5em;
   }
 
 .footer-nav a:hover {
     color: royalblue;
 }
+.top { 
+  
+   font-weight: 600;
+   float: right;
+   width: 120px;
+}
+
+.footer-nav {
+    display: none; 
+}
 /* ================================= 
   Media Queries
 ==================================== */
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+    .main-nav li {
+            display: inline-block;
+            width: 18%;
+            padding-top: 0;
+            margin-right: 1.25em;
+            background-color: inherit;
+          }
+ 
+    .box
+          {
+             width: 45%;
+             vertical-align: top;
+             float: none;
+             display: inline-block;
+         } 
     .profile-image {
-        width: 400px;
+            padding-top: 5%;
+            float: right; 
+    }
+    
+    .headline {
+        display:inline-block;
+        padding-right: 5%;
+        padding-bottom: 5%
+      }
+    
+    .intro {
+        float: left;
+        width: 50%;
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+    
+    .group:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+     .footer-nav { 
+      visibility: visible;
+      display: inline;
+      list-style: none;
+      width: 50%;
+      font-weight: 600;
+      float: right;
+      padding-left: 15%;
+   }
+   .top {
+       display: none;
+   }
+}
+    
+@media screen and (min-width: 1024px) {
+.name {
+        float: left;
+        width: 40%
+    }
+.main-nav {
         float: right;
+        font-size: 1.25em;
+        margin-top: 70px;
+        width: 60%;
+      }
+.main-content {
+        width:  95%;
         margin: 0 auto;
     }
-    .portfolio {
-        display: inline;
-        float: left;
-        width: 100%;
-        align-items: center;
-        border: 5px solid red;
-        padding: 0;
-        margin: 0;
-        justify-content: center;
-    }
-    img {
-        width: 250px;
-    }
-    .portfolio > div {
-        background-color: #f1f1f1;
-        height: 350px;
-        width: 300px;
-        margin: 10px;
-        text-align: center; 
-        /* line-height: 75px; */
-        padding: 20px 20px 20px 20px;
-        font-size: 15px;
-}
-p {
-    font-size: 28px;
-    margin-top: auto;
-    margin-left: 60px;
-    text-align: left;
-    color: black
-}
-}
 
-@media(min-width: 768px) {
+.left,
+.right
+ {
+    width: 33%;
+    vertical-align: top;
+    float: none;
+    display: inline-block;
+}
+.footer-name {
+    padding-left: 1rem;
+}
+.footer-nav {
+    padding-left: 20%;
+}
+.top {
+    display: none;
+}
+} 
 
-    .main-nav {
-        width: 335px; 
-    }
-    .profile-image {
-        width: 30%;
-}
 
-p {
-        font-size: 24px;
-        margin-top: auto;
-        margin-left: 60px;
-        text-align: left;
-        color: black
-}
-
-    .portfolio {
-        display: inline;
-        flex-wrap: wrap;
-        width: 100%;
-        align-items: center;
-        border: 5px solid red;
-        padding: 0;
-        margin: 0;
-        justify-content: center;
-}
-    .portfolio > div {
-        background-color: #f1f1f1;
-        height: 350px;
-     
-        margin: 10px;
-        text-align: center; 
-        /* line-height: 75px; */
-        padding: 20px 20px 20px 20px;
-        font-size: 15px;
-}
-}
 
 /*@media (min-width: 320px) {
     .main-header {
@@ -325,12 +268,7 @@ p {
 
     
 
-    /*.container {
-        width: 85%;
-        max-width: 1150px;
-        margin: 0 auto;
-        display: inline;
-    }
+    
         
     .main-nav {
         float: right; 
