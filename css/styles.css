@@ -1,5 +1,5 @@
 /* ================================= 
-  Base Layout
+  Base Layout & Styles 
 ==================================== */
 
 * {
@@ -25,7 +25,7 @@ body {
     color: black;
     text-align: center;
 }
-  
+
 .main-nav li {
     list-style: none;
     text-align: center;
@@ -33,7 +33,6 @@ body {
     margin-bottom: 0.25em;
     font-weight: bold;
     padding: 0;
-
     border-radius: 35px;
     background-color: white;
 }
@@ -83,6 +82,7 @@ h3 {
 .profile-image {
     display: block;
     margin: auto;
+    width: 320px;
  
 }
 
@@ -149,9 +149,7 @@ hr {
   Media Queries
 ==================================== */
 @media screen and (min-width: 768px) {
-    body {
-        align-items: center;
-    }
+
     .main-nav li {
             display: inline-block;
             width: 18%;
@@ -170,6 +168,7 @@ hr {
     .profile-image {
             padding-top: 5%;
             float: right; 
+           
     }
     
     .headline {
@@ -215,8 +214,9 @@ hr {
         width: 60%;
       }
 .profile-image {
-    padding-right: 10%;
-    padding-top: 0;
+    padding-right: 9%;
+    padding-top: 2%;
+    width: 40%;
 }
 .main-content {
         width: 95%;
